@@ -1,0 +1,66 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 10px 50px 50px 50px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+  width: 35%;
+  margin: auto;
+}
+
+.jumbotron {
+  background-color: rgb(18, 11, 44);
+  color: white;
+}
+
+.sub {
+  float: right;
+  margin-right: 33%;
+  background-color: rgb(5, 158, 69);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  width: 8%;
+  border: 2px solid;
+}
+
+label {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.letters {
+  font-size: 3vmin;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: auto;
+  animation: bsLetter 2s 1;
+}
+
+@keyframes logoAnimation {
+  0% {
+    color: rgb(18, 11, 44);
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    color: rgba(247, 243, 243, 0.753);
+    transform: scale(1);
+  }
+}
+@keyframes bsLetter {
+  0% {
+    color: rgb(18, 11, 44);
+    transform: rotate(0deg);
+  }
+  100% {
+    color: rgba(247, 243, 243, 0.753);
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

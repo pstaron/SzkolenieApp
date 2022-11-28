@@ -1,0 +1,73 @@
+$letters: rgba(247, 243, 243, 0.753);
+$bg-color:  rgb(18, 11, 44);
+$black: black;
+$white: #fff;
+$font16: 16px;
+$bold: bold;
+
+
+body{
+ font-family: 'Times New Roman', Times, serif;
+ margin: 10px 50px 50px 50px;
+}
+.form-group{
+    padding-bottom: 20px;
+    width: 35%;
+    margin: auto;
+
+}
+.jumbotron{
+    background-color: rgb(18, 11, 44);
+    color: white;
+    
+}
+.sub{
+    float: right;
+    margin-right: 33%;
+    background-color: rgb(5, 158, 69);
+    color: $black;
+    font-size: $font16;
+    font-weight: $bold;
+    width: 8%;
+    border: 2px solid;
+}
+label{
+    color: $black;
+    font-size: $font16;  
+    font-weight: $bold;
+}
+.letters{
+	font-size: 3vmin;
+    display: block;
+	text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+	margin: auto;
+	
+	animation: bsLetter 2s 1;
+}
+
+  @keyframes logoAnimation{
+    0%{
+          color: $bg-color;		
+      transform: scale(0.2) 
+    }
+    50%{ 	
+      transform: scale(1.5)
+    } 
+      100%{
+          color: $letters;		
+      transform: scale(1)
+    } 
+  }
+  @keyframes bsLetter{
+    0%{ 
+          color: $bg-color;		
+      transform: rotate(0deg); 
+    }
+    100%{ 
+          color: $letters;		
+      transform: rotate(360deg);		
+    } 
+  }
+  
